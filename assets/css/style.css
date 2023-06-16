@@ -1337,7 +1337,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
+  .avatar-box { border-radius: 10px; }
 
   .avatar-box img { width: 120px; }
 
@@ -1424,7 +1424,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .testimonials-avatar-box {
     transform: translate(30px, -30px);
-    border-radius: 20px;
+    border-radius: 15px;
   }
 
   .testimonials-avatar-box img { width: 80px; }
