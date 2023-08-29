@@ -511,6 +511,10 @@ main {
   #CV
 \*-----------------------------------*/
 
+          .pdf{
+            text-align: center;
+          }
+
           /* Style for the button */
           .pdf-button {
             display: inline-block;
@@ -546,8 +550,8 @@ main {
             border-radius: 2px 20px;
             font-size: 13px;
             padding: 10px;
-            /* margin-bottom: 35px;
-            margin-right: 10px; */
+            margin-bottom: 35px;
+            /* margin-right: 10px; */
             margin-left: 2%;
             box-shadow: var(--shadow-2);
             transition: var(--transition-1);
