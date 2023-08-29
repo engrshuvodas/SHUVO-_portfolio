@@ -516,10 +516,12 @@ main {
             display: inline-block;
             background-color: var(--orange-yellow-crayola);
             color: var(--border-gradient-onyx);
-            border-radius: 0 15px;
+            border-radius: 2px 20px;
             font-size: 13px;
             padding: 10px;
-            margin-left:87%;
+            margin-bottom: 35px;
+            /* margin-right: 10px; */
+            /* margin-left:40%; */
             box-shadow: var(--shadow-2);
             transition: var(--transition-1);
             position:static ;
@@ -527,11 +529,38 @@ main {
             right: -15px;
             z-index: 1;
             text-decoration:none;
-            text-align: center;
+            text-align:center;
           }
           
           /* Hover effect */
           .pdf-button:hover {
+            background-color: var(--border-gradient-onyx);
+            color: var(--orange-yellow-crayola);
+}
+
+
+          .pdf-button-d {
+            display: inline-block;
+            background-color: var(--orange-yellow-crayola);
+            color: var(--border-gradient-onyx);
+            border-radius: 2px 20px;
+            font-size: 13px;
+            padding: 10px;
+            /* margin-bottom: 35px;
+            margin-right: 10px; */
+            margin-left: 2%;
+            box-shadow: var(--shadow-2);
+            transition: var(--transition-1);
+            position:static ;
+            top: -15px;
+            right: -15px;
+            z-index: 1;
+            text-decoration:none;
+            text-align:center;
+          }
+          
+          /* Hover effect */
+          .pdf-button-d:hover {
             background-color: var(--border-gradient-onyx);
             color: var(--orange-yellow-crayola);
 }
@@ -1148,6 +1177,7 @@ main {
 
 
 
+
 /*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/
@@ -1244,15 +1274,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled {
   opacity: 0.7;
-  cursor: not-allowed;
 }
 
 .form-btn:disabled:hover { background: var(--border-gradient-onyx); }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
-
-
-
 
 
 /*-----------------------------------*\
