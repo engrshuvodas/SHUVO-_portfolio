@@ -511,6 +511,30 @@ main {
   #CV
 \*-----------------------------------*/
 
+          /* Style for the button */
+          .pdf-button {
+            display: inline-block;
+            background-color: var(--orange-yellow-crayola);
+            color: var(--border-gradient-onyx);
+            border-radius: 0 15px;
+            font-size: 13px;
+            padding: 10px;
+            margin-left:87%;
+            box-shadow: var(--shadow-2);
+            transition: var(--transition-1);
+            position:static ;
+            top: -15px;
+            right: -15px;
+            z-index: 1;
+            text-decoration:none;
+            text-align: center;
+          }
+          
+          /* Hover effect */
+          .pdf-button:hover {
+            background-color: var(--border-gradient-onyx);
+            color: var(--orange-yellow-crayola);
+}
 
 
 
