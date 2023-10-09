@@ -1278,6 +1278,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .form-btn:disabled:hover { background: var(--border-gradient-onyx); }
