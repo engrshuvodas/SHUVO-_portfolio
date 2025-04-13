@@ -194,6 +194,36 @@
         align-items: center;
       }
     }
+
+    /* Fixed Fiverr Button */
+    .fixed-fiverr-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ff5e00;
+      color: white;
+      padding: 15px 25px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.3s;
+      text-decoration: none;
+    }
+
+    .fixed-fiverr-btn:hover {
+      background-color: #ff7a00;
+      transform: scale(1.05);
+    }
+
+    /* Mobile responsive Fiverr button */
+    @media (max-width: 768px) {
+      .fixed-fiverr-btn {
+        font-size: 1rem;
+        padding: 12px 20px;
+        bottom: 15px;
+        right: 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -245,5 +275,8 @@
       </div>
     </div>
   </main>
+
+  <!-- Fixed Fiverr Button -->
+  <a href="https://www.fiverr.com/shuvo_das74886/install-whatsapp-marketing-tool-at-no-cost?context_referrer=tailored_homepage_perseus&source=recently_viewed_gigs&ref_ctx_id=2283232967414a02bb54f63f46fdea06&context=recommendation&pckg_id=1&pos=1&context_alg=recently_viewed&seller_online=true&imp_id=045e0ccc-0b67-467d-a353-7b5e22932074" class="fixed-fiverr-btn" target="_blank">💬 Chat with Me</a>
 </body>
 </html>
