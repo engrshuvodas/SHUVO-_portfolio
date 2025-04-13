@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elegant Blog Detail</title>
+  <style>
+    /* Base Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1c1c1c;
+      color: #f0f0f0;
+    }
+
+    .blog-detail {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #2a2a2a;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .blog-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .blog-title {
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin: 0;
+      font-weight: bold;
+      line-height: 1.3;
+    }
+
+    .blog-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+      color: #bbb;
+    }
+
+    .dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #bbb;
+    }
+
+    .blog-detail-banner {
+      display: flex;
+      gap: 20px; /* Adds space between images */
+      justify-content: center;
+      margin-bottom: 25px;
+    }
+
+    .blog-detail-banner img {
+      width: 48%; /* Ensures both images fit within the container */
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .blog-detail-banner img:hover {
+      transform: scale(1.05);
+    }
+
+    .blog-body {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #e0e0e0;
+      margin-bottom: 20px;
+    }
+
+    .blog-body p {
+      margin-bottom: 20px;
+    }
+
+    .blog-footer {
+      text-align: center;
+      font-size: 16px;
+      color: #bbb;
+    }
+
+    .blog-footer strong {
+      color: #fff;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .blog-detail {
+        padding: 20px;
+      }
+
+      .blog-title {
+        font-size: 2rem;
+      }
+
+      .blog-body {
+        font-size: 16px;
+      }
+
+      .blog-detail-banner {
+        flex-direction: column;
+      }
+
+      .blog-detail-banner img {
+        width: 100%; /* Stack images on small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <article class="blog-detail">
+    <header class="blog-header">
+      <h1 class="blog-title">Elegant Blog Design</h1>
+      <div class="blog-meta">
+        <p class="blog-category">Web Design</p>
+        <span class="dot"></span>
+        <time datetime="2023-04-13">April 13, 2023</time>
+      </div>
+    </header>
+
+    <figure class="blog-detail-banner">
+      <img src="./assets/images/blog-1.jpg" alt="Blog Image 1" />
+      <img src="./assets/images/blog-1.jpg" alt="Blog Image 2" />
+    </figure>
+
+    <section class="blog-body">
+      <p>
+        Welcome to an elegant, clean, and modern blog design that combines the beauty of minimalism with vibrant aesthetics. This design gives the content a simple but stylish appearance.
+      </p>
+      <p>
+        The layout is centered with a soft, dark theme to focus your attention on the content. The images are displayed in full-width to make a visual impact.
+      </p>
+      <p>
+        This page is fully responsive and adjusts beautifully across devices, ensuring your readers enjoy a seamless experience regardless of screen size.
+      </p>
+
+      <footer class="blog-footer">
+        <p>Posted by <strong>Jane Doe</strong></p>
+      </footer>
+    </section>
+  </article>
+
+</body>
+</html>
