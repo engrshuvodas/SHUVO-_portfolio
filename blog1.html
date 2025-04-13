@@ -6,7 +6,6 @@
   <title>Grow Your Business with WhatsApp</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- Responsive Blog Styles -->
   <style>
     :root {
       --fs-1: 2.25rem;
@@ -71,7 +70,7 @@
       font-size: var(--fs-7);
       color: var(--light-gray-70);
       margin-bottom: 30px;
-      text-align: justify; 
+      text-align: justify;
       gap: 10px;
     }
 
@@ -124,7 +123,6 @@
       color: var(--white-2);
     }
 
-    /* ✅ Updated Image Section */
     .image-section {
       margin: 30px 0;
       display: flex;
@@ -150,7 +148,6 @@
       text-align: center;
     }
 
-    /* Updated button design */
     .cta a {
       display: inline-block;
       margin-top: 10px;
@@ -170,7 +167,63 @@
       transform: scale(1.05);
     }
 
-    /* Responsive tweaks for mobile */
+    /* ✅ Floating Fiverr Chat Button */
+    .wa-chat-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      background: var(--eerie-black-2);
+      color: var(--white-2);
+      text-decoration: none;
+      border-radius: 50px;
+      padding: 10px 15px;
+      border: 1px solid var(--jet);
+      box-shadow: var(--shadow-2);
+      z-index: 999;
+      transition: transform 0.3s ease, background 0.3s ease;
+      max-width: 250px;
+      width: auto;
+    }
+
+    .wa-chat-button:hover {
+      transform: scale(1.05);
+      background: var(--jet);
+    }
+
+    .wa-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 12px;
+      border: 2px solid var(--orange-yellow-crayola);
+    }
+
+    .wa-chat-info {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .wa-chat-name {
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--white-2);
+    }
+
+    .wa-chat-meta {
+      font-size: 12px;
+      color: var(--light-gray);
+    }
+
+    .wa-status {
+      color: #26d367;
+      font-weight: bold;
+    }
+
+    /* ✅ Responsive tweaks for mobile */
     @media (max-width: 768px) {
       main {
         padding: 30px 5%;
@@ -193,35 +246,45 @@
         gap: 5px;
         align-items: center;
       }
-    }
 
-    /* Fixed Fiverr Button */
-    .fixed-fiverr-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #ff5e00;
-      color: white;
-      padding: 15px 25px;
-      font-size: 1.2rem;
-      border-radius: 30px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s, transform 0.3s;
-      text-decoration: none;
-    }
-
-    .fixed-fiverr-btn:hover {
-      background-color: #ff7a00;
-      transform: scale(1.05);
-    }
-
-    /* Mobile responsive Fiverr button */
-    @media (max-width: 768px) {
-      .fixed-fiverr-btn {
-        font-size: 1rem;
-        padding: 12px 20px;
+      .wa-chat-button {
         bottom: 15px;
-        right: 15px;
+        left: 15px;
+        padding: 8px 12px;
+      }
+
+      .wa-avatar {
+        width: 36px;
+        height: 36px;
+      }
+
+      .wa-chat-name {
+        font-size: 14px;
+      }
+
+      .wa-chat-meta {
+        font-size: 11px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .wa-chat-button {
+        bottom: 10px;
+        left: 10px;
+        padding: 6px 10px;
+      }
+
+      .wa-avatar {
+        width: 32px;
+        height: 32px;
+      }
+
+      .wa-chat-name {
+        font-size: 12px;
+      }
+
+      .wa-chat-meta {
+        font-size: 10px;
       }
     }
   </style>
@@ -237,7 +300,6 @@
         <span style="flex: 1; text-align: center;">📂 Marketing</span>
       </div>
 
-      <!-- ✅ Image Section -->
       <div class="image-section">
         <img src="./assets/images/blog/wasender details.jpg" alt="WhatsApp Marketing" />
       </div>
@@ -276,7 +338,14 @@
     </div>
   </main>
 
-  <!-- Fixed Fiverr Button -->
-  <a href="https://www.fiverr.com/shuvo_das74886/install-whatsapp-marketing-tool-at-no-cost?context_referrer=tailored_homepage_perseus&source=recently_viewed_gigs&ref_ctx_id=2283232967414a02bb54f63f46fdea06&context=recommendation&pckg_id=1&pos=1&context_alg=recently_viewed&seller_online=true&imp_id=045e0ccc-0b67-467d-a353-7b5e22932074" class="fixed-fiverr-btn" target="_blank">💬 Chat with Me</a>
+  <!-- ✅ Floating Fiverr Button -->
+  <a href="https://www.fiverr.com/shuvo_das74886/install-whatsapp-marketing-tool-at-no-cost"
+     class="wa-chat-button" target="_blank">
+    <img src="./assets/images/Engr Shuvo Das.png" alt="Shuvo" class="wa-avatar" />
+    <div class="wa-chat-info">
+      <div class="wa-chat-name">Message - Shuvo</div>
+      <div class="wa-chat-meta"><span class="wa-status">● Online</span> · Avg. response time: 1 Hour</div>
+    </div>
+  </a>
 </body>
 </html>
