@@ -186,7 +186,6 @@
       max-width: 250px;
       width: auto;
       border: 2px solid var(--light-gray-70);  /* Updated border color */
-   
     }
 
     .wa-chat-button:hover {
@@ -223,6 +222,28 @@
     .wa-status {
       color: #26d367;
       font-weight: bold;
+    }
+
+    /* ✅ Share Dialog Box */
+    .share-dialog {
+      display: none;
+      position: fixed;
+      bottom: 70px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #26d367;
+      padding: 5px;
+      border-radius: 10px;
+      color: var(--smoky-black);
+      box-shadow: var(--shadow-2);
+      z-index: 1000;
+      font-size: var(--fs-5);
+      width: 250px;
+      text-align: center;
+    }
+
+    .share-dialog p {
+      margin-bottom: 10px;
     }
 
     /* ✅ Responsive tweaks for mobile */
@@ -297,7 +318,7 @@
       <h1 class="blog-title">Grow Your Business with WhatsApp </h1>
 
       <div class="blog-meta">
-        <span style="flex: 1; text-align: center;">👨‍💻 Shuvo</span>
+        <a href="https://github.com/engrshuvodas" target="_blank" style="flex: 1; text-align: center;">👨‍💻 Shuvo</a>
         <span>📅 April 13, 2025</span>
         <span style="flex: 1; text-align: center;">📂 Marketing</span>
       </div>
@@ -306,10 +327,8 @@
         <img src="./assets/images/blog/wasender details.jpg" alt="WhatsApp Marketing" />
       </div>
 
-      <div class="share-buttons">        
-        <a href="#">👍 Like</a>
-        <a href="#">💬 Comment</a>
-        <a href="#">🔗 Share</a>
+      <div class="share-buttons">
+        <a href="#" id="share-link" onclick="copyLink()">🔗 Share</a>
       </div>
 
       <div class="blog-content">
@@ -349,5 +368,32 @@
       <div class="wa-chat-meta"><span class="wa-status">● Online</span> · Avg. response time: 1 Hour</div>
     </div>
   </a>
+
+  <!-- ✅ Share Dialog Box -->
+  <div id="share-dialog" class="share-dialog">
+    <p>Sharing this page now... 🗣️</p>
+  </div>
+
+  <script>
+    function copyLink() {
+      const link = window.location.href; // Get the current page URL
+      const textArea = document.createElement('textarea');
+      textArea.value = link;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+
+      alert('Link copied to clipboard! You can now share it.');
+
+      // Show the share dialog box for 3 seconds
+      const dialog = document.getElementById('share-dialog');
+      dialog.style.display = 'block';
+      
+      setTimeout(() => {
+        dialog.style.display = 'none';
+      }, 3000); // Hide after 3 seconds
+    }
+  </script>
 </body>
 </html>

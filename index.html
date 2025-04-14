@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shuvo_Portfolio</title>
+  <title>Engr Shuvo Portfolio</title>
 
   <!--
     - favicon
@@ -48,7 +48,7 @@
         <div class="info-content">
           <h1 class="name" title="Shuvo Das">Engr. Shuvo Das</h1>
 
-          <p class="title">Expert Front-End Web Developer</p>
+          <p class="title">⚙️Developer | Marketer💡</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -127,39 +127,39 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://www.facebook.com/shuvo.das.74886/" class="social-link">
+            <a href="https://www.facebook.com/engr.shuvo74886/" class="social-link" target="_blank">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
-
+        
           <li class="social-item">
-            <a href="https://wa.me/+919641700503" class="social-link">
+            <a href="https://wa.me/+919641700503" class="social-link" target="_blank">
               <ion-icon name="logo-whatsapp"></ion-icon>
             </a>
           </li>
-
-
-
+        
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/engr-shuvo-das-a28085260/" class="social-link">
+            <a href="https://www.linkedin.com/in/engr-shuvo-das-a28085260/" class="social-link" target="_blank">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
-
-
+        
           <li class="social-item">
-            <a href="https://www.youtube.com/channel/UCEJ0R871tF2PLT27q9azYWg" class="social-link">
+            <a href="https://www.youtube.com/channel/UCEJ0R871tF2PLT27q9azYWg" class="social-link" target="_blank">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
-
+        
           <li class="social-item">
-            <a href="https://github.com/engrshuvodas" class="social-link">
+            <a href="https://github.com/engrshuvodas" class="social-link" target="_blank">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
+          
+        
         </ul>
+        
 
       </div>
 
@@ -1181,13 +1181,14 @@
 
         <section class="mapbox" data-mapbox>
           <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d773.0908301302145!2d89.55269939709109!3d22.822447645019018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff911cc5c04a0b%3A0x38aa84a07f8367fc!2sPlan2career!5e0!3m2!1sen!2sbd!4v1686859041060!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              width="400" height="300" loading="lazy"></iframe>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418273.224911567!2d68.6848901800457!3d22.399496801005473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959051f5f0ef795%3A0x861bd887ed54522e!2sGujarat!5e1!3m2!1sen!2sin!4v1744618470901!5m2!1sen!2sin" 
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </figure>
         </section>
+        
 
-        <section class="contact-form">
+        <!-- <section class="contact-form">
 
           <h3 class="h3 form-title">Contact Form</h3>
 
@@ -1209,7 +1210,38 @@
 
           </form>
 
+        </section> -->
+
+
+
+        <section class="contact-form">
+  <h3 class="h3 form-title">Contact Form</h3>
+
+  <form id="contact-form" class="form" data-form>
+    <div class="input-wrapper">
+      <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+      <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+    </div>
+
+    <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+    <button class="form-btn" type="submit" data-form-btn>
+      <ion-icon name="paper-plane"></ion-icon>
+      <span>Send Message</span>
+    </button>
+  </form>
+
+  <!-- Steps to Set Up EmailJS:
+  Sign up on EmailJS.
+  
+  Create an email service (e.g., Gmail, SMTP, etc.) on the EmailJS dashboard.
+  
+  Create a template that will define how the email will look (e.g., what variables you want to include such as name, email, and message).
+  
+  In your emailjs.sendForm() method, replace 'your_service_id' and 'your_template_id' with your actual service and template IDs from EmailJS. -->
+
         </section>
+
 
       </article>
 

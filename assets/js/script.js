@@ -157,3 +157,18 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();  // Prevent the default form submission
+
+  // Use EmailJS to send the form data
+  emailjs.sendForm('your_service_id', 'your_template_id', this)
+    .then(function(response) {
+      alert('Message sent successfully!');
+    }, function(error) {
+      alert('Failed to send message. Please try again.');
+    });
+});
