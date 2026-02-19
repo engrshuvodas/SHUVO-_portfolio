@@ -1,179 +1,143 @@
-'use strict';
+// Theme Toggle functionality
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+const themeIcon = themeToggle.querySelector('i');
 
-
-
-// element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
-
-
-// sidebar variables
-const sidebar = document.querySelector("[data-sidebar]");
-const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-
-// sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
-
-
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
-
-// modal variable
-const modalImg = document.querySelector("[data-modal-img]");
-const modalTitle = document.querySelector("[data-modal-title]");
-const modalText = document.querySelector("[data-modal-text]");
-
-// modal toggle function
-const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
+// Check local storage for theme preference
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateIcon(savedTheme);
 }
 
-// add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
+themeToggle.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-  testimonialsItem[i].addEventListener("click", function () {
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateIcon(newTheme);
+});
 
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-
-    testimonialsModalFunc();
-
-  });
-
-}
-
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
-
-
-
-// custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
-
-select.addEventListener("click", function () { elementToggleFunc(this); });
-
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
-
-  });
-}
-
-// filter variables
-const filterItems = document.querySelectorAll("[data-filter-item]");
-
-const filterFunc = function (selectedValue) {
-
-  for (let i = 0; i < filterItems.length; i++) {
-
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
+function updateIcon(theme) {
+    if (theme === 'dark') {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
     } else {
-      filterItems[i].classList.remove("active");
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
     }
-
-  }
-
 }
 
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
+// Mobile Menu functionality
+const mobileMenuBtn = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
 
-for (let i = 0; i < filterBtn.length; i++) {
+mobileMenuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 
-  filterBtn[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
-
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
-
-  });
-
-}
-
-
-
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
-
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
+    // Animate burger to close icon (optional, just simple toggle for now)
+    const icon = mobileMenuBtn.querySelector('i');
+    if (navLinks.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
     } else {
-      formBtn.setAttribute("disabled", "");
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
     }
+});
 
-  });
-}
-
-
-
-// page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
-
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
-    }
-
-  });
-}
-
-
-
-
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-  event.preventDefault();  // Prevent the default form submission
-
-  // Use EmailJS to send the form data
-  emailjs.sendForm('your_service_id', 'your_template_id', this)
-    .then(function(response) {
-      alert('Message sent successfully!');
-    }, function(error) {
-      alert('Failed to send message. Please try again.');
+// Close mobile menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        const icon = mobileMenuBtn.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
     });
 });
 
+// Sticky Header on Scroll
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        header.classList.add('sticky');
+    } else {
+        header.classList.remove('sticky');
+    }
+});
 
+// Skill Bar Animation on Scroll
+const skillsSection = document.getElementById('skills');
+const skillProgressBars = document.querySelectorAll('.skill-progress');
+let skillsAnimated = false;
 
+function animateSkills() {
+    const sectionPos = skillsSection.getBoundingClientRect().top;
+    const screenPos = window.innerHeight / 1.3;
 
- 
+    if (sectionPos < screenPos && !skillsAnimated) {
+        skillProgressBars.forEach(bar => {
+            const width = bar.getAttribute('data-width');
+            bar.style.width = width;
+        });
+        skillsAnimated = true;
+    }
+}
+
+window.addEventListener('scroll', animateSkills);
+
+// Smooth Scroll for Anchor Links (Polyfill for older browsers mostly handled by CSS, but robust here)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80, // Offset for fixed header
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// REVIEW MODAL LOGIC
+function openReviewModal(card) {
+    const modal = document.getElementById('reviewModal');
+    const name = card.getAttribute('data-name');
+    const role = card.getAttribute('data-role');
+    const text = card.getAttribute('data-text');
+    const image = card.getAttribute('data-image');
+    const stars = parseInt(card.getAttribute('data-stars'));
+    const flag = card.getAttribute('data-flag');
+
+    document.getElementById('modalName').innerText = name;
+    const modalFlag = document.getElementById('modalFlag');
+    if (modalFlag) {
+        modalFlag.className = 'modal-flag fi fi-' + flag.toLowerCase();
+        modalFlag.style.display = 'inline-block';
+    }
+    document.getElementById('modalRole').innerText = role;
+    document.getElementById('modalText').innerText = text;
+    document.getElementById('modalImg').src = image;
+
+    const starsContainer = document.getElementById('modalStars');
+    starsContainer.innerHTML = '';
+    for (let i = 0; i < stars; i++) {
+        const star = document.createElement('i');
+        star.className = 'fas fa-star';
+        starsContainer.appendChild(star);
+    }
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+function closeReviewModal(event) {
+    const modal = document.getElementById('reviewModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto'; // Restore scrolling
+}

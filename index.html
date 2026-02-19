@@ -2,1210 +2,1206 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engr Shuvo Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/shuvo_logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engr Shuvo Das - Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Flag Icons for better flag visualization -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+    <link rel="shortcut icon" href="./assets/images/shuvo_logo.ico" type="image/x-icon">
+    <script>
+        (function () {
+            const theme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/Engr Shuvo Das.png" alt="shuvo_profile" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Shuvo Das">Engr. Shuvo Das</h1>
-
-          <p class="title">⚙️Developer | Marketer💡</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:engrshuvoda@gmail.com" class="contact-link">engrshuvoda@gmail.com</a>
-            </div>
-            
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">WhatsApp or Phone</p>
-              <a href="https://wa.me/+8801765245872" class="contact-link" target="_blank">+880 1765-245872</a>
-            </div>            
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">November 29, 2004</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <a href="https://maps.app.goo.gl/cPRpMYMeenA5sBNN6" class="contact-link" target="_blank">Gujarat, India</a>
-            </div>
-            
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.facebook.com/engr.shuvo74886/" class="social-link" target="_blank">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-        
-          <li class="social-item">
-            <a href="https://wa.me/+8801765245872" class="social-link" target="_blank">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-          </li>
-        
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/engrshuvoda" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-        
-          <li class="social-item">
-            <a href="https://www.youtube.com/channel/UCEJ0R871tF2PLT27q9azYWg" class="social-link" target="_blank">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-        
-          <li class="social-item">
-            <a href="https://github.com/engrshuvodas" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-          
-        
-        </ul>
-        
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Hi, I’m Engr. Shuvo Das, a <b><i>Software Engineer</i></b> with a strong background in both <b><i>web development and desktop software development</i></b>. I specialize in building custom websites and powerful desktop-based marketing tools, with a major focus on WhatsApp Marketing Software that helps businesses grow faster and smarter.
-
-          </p>
-
-          <p>
-            Over the years, I’ve worked with clients across the USA, Canada, Australia & beyond, building more than 150 websites and delivering custom solutions to support digital growth. My goal is simple — to create tools and platforms that make marketing easier, smarter & more effective.<br><br>
-
-            <p class="highlight-heading">What I Can Do For You</p>
-
-
-            <br>
-            ✔️ Build professional, responsive websites using WordPress & custom code (HTML, CSS, JS, PHP)
-            <br>
-            ✔️ Create powerful marketing software tailored to your business needs
-            <br>
-            ✔️ Offer my premium WhatsApp Marketing Software to automate and scale your outreach
-            <br>
-            ✔️ Provide targeted lead generation tools to extract real customer data from social media, Google Maps & more
-            <br>
-            ✔️ Help with WhatsApp group marketing – find, join, extract, and message potential leads
-            <br>
-            ✔️ Deliver full setup, training & remote support via AnyDesk or Zoom
-          </p>   
-          <br>  
-          
-          
-          <p class="highlight-heading">About My WhatsApp Marketing Software</p>
-
-          <br>
-          📱 Obtain target customer numbers and send over 1000 bulk messages daily.
-          <br>   
-          🤖 Automate responses with built-in chatbots.
-          <br>   
-          🚀 Find & Join WhatsApp Groups Automatically
-          <br>
-          📥 Extract all group member contacts
-          <br>
-          📨 Send personalized messages to each contact
-          <br>
-          🌐 Collect leads from Google Maps, social media, websites
-          <br>
-          📋 Extract name, number, email, website, and social profiles
-          <br>
-          🛡️ Utilize anti-ban technology to ensure your account remains safe and compliant.
-          <br>     
- 
-        </section>
-
-        <!--
-          - CV
-        -->
-        <div class="pdf">
-                 
-        <a class="pdf-button" href="./assets/images/cv/Professional Resume of Shuvo Das.pdf" target="_blank">View CV</a>
-
-        <a class="pdf-button-d" href="./assets/images/cv/Professional Resume of Shuvo Das.pdf" download>Download CV</a>
-        
-      </div>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Desktop apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for Windows & macOS.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/Shamim Reza.png" alt="Shamim Reza" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Shamim Reza</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    "Working with this web developer has been an absolute pleasure. Their expertise and attention to detail are truly impressive. They delivered a beautifully designed and fully functional website that exceeded my expectations. I highly recommend their services to anyone looking for a top-notch web development experience. Thank you for your professionalism and outstanding work!"
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/Shuvankar Halder.png" alt="Shuvankar Halder" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Shuvankar Halder</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    "Collaborating with this web developer has been a game-changer for my online business. They transformed my vision into a stunning website that is both visually appealing and user-friendly. Their technical skills and prompt communication made the entire development process seamless. I am thrilled with the results and can confidently say that they are a true asset to any web project."
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/Susmita Kundu.png" alt="Susmita Kundu" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Susmita Kundu</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    "I had the pleasure of working with this talented web developer, and I am blown away by the results. They brought my ideas to life with an exceptional website that perfectly represents my brand. Their creative approach, technical proficiency, and ability to meet deadlines were outstanding. It's rare to find a web developer who not only understands your vision but also enhances it. I highly endorse their skills and commitment to excellence."
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <!-- <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li> -->
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/Shamim Reza.png" alt="Shamim Reza" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Shamim Reza</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  just model here
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-        
-
-
-        <!--
-          - clients
-        -->
-
-        <!-- <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section> -->
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-        
-            <h3 class="h3">Education</h3>
-          </div>
-        
-          <ol class="timeline-list">
-        
-            <li class="timeline-item">
-        
-              <h4 class="h4 timeline-item-title">Parul University, India</h4>
-        
-              <span>2024 — Present</span>
-        
-              <p class="timeline-text">
-                B.Tech in Computer Science & Engineering
-              </p>
-        
-            </li>
-        
-            <li class="timeline-item">
-        
-              <h4 class="h4 timeline-item-title">Southeast University, Dhaka</h4>
-        
-              <span>2023 — Transferred to India for Further Studies</span>
-        
-              <p class="timeline-text">
-                B.Sc. in Computer Science & Engineering
-              </p>
-        
-            </li>
-        
-            <li class="timeline-item">
-        
-              <h4 class="h4 timeline-item-title">Khulna Polytechnic Institute, Khulna</h4>
-        
-              <span>2023 — 2019</span>
-        
-              <p class="timeline-text">
-                Diploma in Computer Engineering
-              </p>
-        
-            </li>
-        
-            <li class="timeline-item">
-        
-              <h4 class="h4 timeline-item-title">Narail Technical School & College, Narail</h4>
-        
-              <span>2019 — 2017</span>
-        
-              <p class="timeline-text">
-                Department of Computer Science
-              </p>
-        
-            </li>
-        
-          </ol>
-        
-        </section>
-        
-
-
-
-
-
-
-
-
-
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-        
-            <h3 class="h3">Experience</h3>
-          </div>
-        
-          <ol class="timeline-list">
-        
-            <!-- <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" style="color: #ffffff">Technical Recruiter (Blockchain & Web3)</h4>
-              <span>Jan 2026 — Present</span>
-              <p class="timeline-text">
-                <strong style="color: #ffffff">Company:</strong> JW Corp <br>
-                <strong style="color: #ffffff">Location:</strong> Courbevoie, France<br>
-                <strong style="color: #ffffff">Type:</strong> Remote<br>
-                <strong style="color: #ffffff">Contribute Details:</strong> Responsible for sourcing and hiring senior blockchain developers for Web3 projects. Managing end-to-end recruitment including job posting, CV screening, candidate shortlisting & coordinating technical interviews with CTOs. Currently supporting a Web3 NFT-based gaming project built with React, JavaScript, Express.js, Tailwind CSS & Ethers.js.
-              </p>
-            </li> -->
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" style="color: #ffffff">Founder</h4>
-              <span>Mar 2025 — Present</span>
-              <p class="timeline-text">
-                <strong style="color: #ffffff">Company:</strong> WASendX<br>
-                <strong style="color: #ffffff">Location:</strong> Gujarat, India<br>
-                <strong style="color: #ffffff">Type:</strong> Remote<br>
-                <strong style="color: #ffffff">Contribute Details:</strong> I’ve officially started a new journey as the Founder of WASendX — a smart and powerful WhatsApp Marketing Software built to help businesses scale smarter and faster. It’s packed with features like lead generation, campaign tracking, and anti-ban tech.
-              </p>
-            </li>
-        
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" style="color: #ffffff">Digital Marketing Specialist</h4>
-              <span>Feb 2020 — Present</span>
-              <p class="timeline-text">
-                <strong style="color: #ffffff">Company:</strong> Fiverr<br>
-                <strong style="color: #ffffff">Location:</strong> India<br>
-                <strong style="color: #ffffff">Type:</strong> Remote<br>
-                <strong style="color: #ffffff">Contribute Details:</strong> I help clients grow their businesses with customized WhatsApp marketing strategies and advanced software tools.
-              </p>
-            </li>
-        
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" style="color: #ffffff">HR Manager (Promoted)</h4>
-              <span>May 2024 — Nov 2024</span>
-              <p class="timeline-text">
-                <strong style="color: #ffffff">Company:</strong> CodeCloud Technology<br>
-                <strong style="color: #ffffff">Location:</strong> Dhaka, Bangladesh<br>
-                <strong style="color: #ffffff">Type:</strong> Hybrid<br>
-                <strong style="color: #ffffff">Contribute Details:</strong> Responsible for recruitment, employee engagement, and building a productive workplace culture.
-              </p>
-            </li>
-        
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" style="color: #ffffff">Digital Marketing Manager</h4>
-              <span>Feb 2024 — May 2024</span>
-              <p class="timeline-text">
-                <strong style="color: #ffffff">Company:</strong> CodeCloud Technology <br>
-                <strong style="color: #ffffff">Location:</strong> Dhaka, Bangladesh <br>
-                <strong style="color: #ffffff">Type:</strong> Hybrid <br>
-                <strong style="color: #ffffff">Contribute Details:</strong> Focused on e-commerce site, content management, and digital strategy execution.
-              </p>
-            </li>
-        
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" style="color: #ffffff">Senior Project Manager</h4>
-              <span>Jan 2024 — Jun 2024</span>
-              <p class="timeline-text">
-                <strong style="color: #ffffff">Company:</strong> Jamdani Hat & Mohanogor Online Shopping (Two Brands Combined)<br>
-                <strong style="color: #ffffff">Location:</strong> Dhaka, Bangladesh<br>
-                <strong style="color: #ffffff">Type:</strong> Contract, On-site<br>
-                <strong style="color: #ffffff">Contribute Details:</strong> Oversaw team coordination, product delivery, digital marketing, and sales optimization for Jamdani saree e-commerce businesses.
-              </p>
-            </li>
-        
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" style="color: #ffffff">Frontend Developer</h4>
-              <span>Jan 2020 — Feb 2024</span>
-              <p class="timeline-text">
-                <strong style="color: #ffffff">Company:</strong> P2C IT<br>
-                <strong style="color: #ffffff">Location:</strong> Khulna, Bangladesh<br>
-                <strong style="color: #ffffff">Type:</strong> Part-time, Hybrid<br>
-                <strong style="color: #ffffff">Contribute Details:</strong> Built responsive, clean UI websites and contributed to frontend development projects.
-              </p>
-            </li>
-        
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title" style="color: #ffffff">Co-Founder</h4>
-              <span>Feb 2023 — Dec 2023</span>
-              <p class="timeline-text">
-                <strong style="color: #ffffff">Company:</strong> Priya Fashion House<br>
-                <strong style="color: #ffffff">Location:</strong> Khulna, Bangladesh<br>
-                <strong style="color: #ffffff">Type:</strong> Contract, Hybrid<br>
-                <strong style="color: #ffffff">Contribute Details:</strong> Managed product sourcing, sales, digital marketing, and customer service via Facebook for saree and gift combo sales.
-              </p>
-            </li>
-        
-          </ol>
-        
-        </section>
-        
-        
-        
-        
-
-
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">WhatsApp Marketing Software</h5>
-                <data value="95">95%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web development</h5>
-                <data value="65">65%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">SEO</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Business Marketing Consulting</h5>
-                <data value="85">85%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Engr. Shuvo <span>Das</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="nav-right">
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <a href="#contact" class="btn">Contact Me</a>
+                <div class="mobile-menu-btn" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
 
-          </div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <p class="hero-subtitle">Hey, I'm</p>
+                <h1 class="hero-title">Engr. Shuvo <span>Das</span></h1>
+                <p class="hero-subtitle" style="color: var(--text-color); font-size: 1.2rem; margin-top: -10px;">
+                    Software Engineer | Marketer</p>
+                <p class="hero-description">
+                    I specialize in building custom websites and powerful desktop-based marketing tools, with a major
+                    focus on WhatsApp Marketing Software that helps businesses grow faster and smarter.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">Hire Me</a>
+                    <a href="./assets/images/cv/Professional Resume of Shuvo Das.pdf" class="btn btn-outline"
+                        download>Download CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-blob">
+                    <!-- Real Image from data.html -->
+                    <img src="./assets/images/Fiverr Profile.jpg" alt="Engr. Shuvo Das">
+                </div>
+                <div class="hero-shape"></div>
+            </div>
+        </div>
+    </section>
 
-          <ul class="project-list">
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container stats-container">
+            <div class="stat-item">
+                <span class="stat-number">150<span>+</span></span>
+                <span class="stat-title">Websites Built</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">1000<span>+</span></span>
+                <span class="stat-title">Daily Msgs Sent</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">50<span>+</span></span>
+                <span class="stat-title">Countries Served</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">8<span>+</span></span>
+                <span class="stat-title">Years Experience</span>
+            </div>
+        </div>
+    </section>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://engrshuvodas.github.io/LMS-POINT/">
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <span>Services</span>
+                <h2>What I Can Do For You</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bezier-curve"></i>
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>The most modern and high-quality design made at a professional level.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>High-quality development of sites at the professional level using WordPress & custom code.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Desktop Apps</h3>
+                    <p>Professional development of applications for Windows & macOS, including marketing tools.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp Marketing</h3>
+                    <p>Automate outreach, extract leads, and scale your business with custom software solutions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Proven strategies to grow your online presence and reach your target audience effectively.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users-viewfinder"></i>
+                    </div>
+                    <h3>Targeted Lead Generation</h3>
+                    <p>Highly targeted B2B lead generation to fill your sales pipeline with verified prospects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container about-container">
+            <div class="about-img">
+                <img src="./assets/images/Engr Shuvo Das.png" alt="About Engr. Shuvo Das">
+            </div>
+            <div class="about-content">
+                <h2>Hey! I'm <span class="highlight">Engr. Shuvo Das</span></h2>
+                <p>
+                    I am a <b>Software Engineer</b> with a strong background in both <b>web development and desktop
+                        software development</b>.
+                    <br><br>
+                    Over the years, I’ve worked with clients across the USA, Canada, Australia & beyond, building more
+                    than 150 websites. My goal is simple — to create tools and platforms that make marketing easier,
+                    smarter & more effective.
+                </p>
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
+        </div>
+    </section>
 
-                  <img src="./assets/images/project img/1. LMS Point.png" alt="lms point" loading="lazy">
-                </figure>
+    <!-- Resume Section -->
+    <section class="section" id="resume">
+        <div class="container">
+            <div class="section-title">
+                <span>Resume</span>
+                <h2>Education & Experience</h2>
+            </div>
 
-                <h3 class="project-title">LMS POINT</h3>
+            <div class="resume-grid">
 
-                <p class="project-category">Web Design</p>
+                <!-- Education Column -->
+                <div class="timeline-column">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="timeline-items">
 
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://engrshuvodas.github.io/Food-Pathao/">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2024 — Present</div>
+                            <div class="timeline-content">
+                                <h4>Parul University, India</h4>
+                                <p>B.Tech in Computer Science & Engineering</p>
+                            </div>
+                        </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2023 — Transferred</div>
+                            <div class="timeline-content">
+                                <h4>Southeast University, Dhaka</h4>
+                                <p>B.Sc. in Computer Science & Engineering (Transferred to India for Further Studies)
+                                </p>
+                            </div>
+                        </div>
 
-                  <img src="./assets/images/project img/2. Food Pathao.png" alt="lms point" loading="lazy">
-                </figure>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2019 — 2023</div>
+                            <div class="timeline-content">
+                                <h4>Khulna Polytechnic Institute, Khulna</h4>
+                                <p>Diploma in Computer Engineering</p>
+                            </div>
+                        </div>
 
-                <h3 class="project-title">Food Pathao</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2017 — 2019</div>
+                            <div class="timeline-content">
+                                <h4>Narail Technical School & College</h4>
+                                <p>Department of Computer Science</p>
+                            </div>
+                        </div>
 
-                <p class="project-category">Web Design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://engrshuvodas.github.io/LMS_Dashboard/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">LMS Dashboard Design</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="./blog1.html" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog/wasender details.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Marketing</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Boost Sales with Bulk Msg WhatsApp Marketing</h3>
-
-                  <p class="blog-text">
-                    Reach More Customers Instantly with Personalized Messaging.
-                  </p>
-
+                    </div>
                 </div>
 
-              </a>
-            </li>
+                <!-- Experience Column -->
+                <div class="timeline-column">
+                    <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                    <div class="timeline-items">
 
-            <li class="blog-post-item">
-              <a href="./blog1.html" target="_blank">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Mar 2025 — Present</div>
+                            <div class="timeline-content">
+                                <h4>Founder <span>WASendX</span></h4>
+                                <p>Gujarat, India (Remote)</p>
+                                <p class="timeline-desc">Officially started a new journey as the Founder of WASendX — a
+                                    smart and powerful WhatsApp Marketing Software built to help businesses scale
+                                    smarter and faster. Packed with features like lead generation, campaign tracking,
+                                    and anti-ban tech.</p>
+                            </div>
+                        </div>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog/black google map.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Feb 2020 — Present</div>
+                            <div class="timeline-content">
+                                <h4>Digital Marketing Specialist <span>Fiverr</span></h4>
+                                <p>India (Remote)</p>
+                                <p class="timeline-desc">Helping clients grow their businesses with customized WhatsApp
+                                    marketing strategies and advanced software tools.</p>
+                            </div>
+                        </div>
 
-                <div class="blog-content">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">May 2024 — Nov 2024</div>
+                            <div class="timeline-content">
+                                <h4>HR Manager (Promoted) <span>CodeCloud Technology</span></h4>
+                                <p>Dhaka, Bangladesh (Hybrid)</p>
+                                <p class="timeline-desc">Responsible for recruitment, employee engagement, and building
+                                    a productive workplace culture.</p>
+                            </div>
+                        </div>
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Marketing</p>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Feb 2024 — May 2024</div>
+                            <div class="timeline-content">
+                                <h4>Digital Marketing Manager <span>CodeCloud Technology</span></h4>
+                                <p>Dhaka, Bangladesh (Hybrid)</p>
+                                <p class="timeline-desc">Focused on e-commerce site, content management, and digital
+                                    strategy execution.</p>
+                            </div>
+                        </div>
 
-                    <span class="dot"></span>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Jan 2024 — Jun 2024</div>
+                            <div class="timeline-content">
+                                <h4>Senior Project Manager <span>Jamdani Hat & Mohanogor</span></h4>
+                                <p>Dhaka, Bangladesh (Contract, On-site)</p>
+                                <p class="timeline-desc">Oversaw team coordination, product delivery, digital marketing,
+                                    and sales optimization for Jamdani saree e-commerce businesses.</p>
+                            </div>
+                        </div>
 
-                    <time datetime="2022-02-23">Mar 28, 2022</time>
-                  </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Jan 2020 — Feb 2024</div>
+                            <div class="timeline-content">
+                                <h4>Frontend Developer <span>P2C IT</span></h4>
+                                <p>Khulna, Bangladesh (Part-time, Hybrid)</p>
+                                <p class="timeline-desc">Built responsive, clean UI websites and contributed to frontend
+                                    development projects.</p>
+                            </div>
+                        </div>
 
-                  <h3 class="h3 blog-item-title">Unlock 1000+ Verified Leads with Google Maps Data Scraping!</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Feb 2023 — Dec 2023</div>
+                            <div class="timeline-content">
+                                <h4>Co-Founder <span>Priya Fashion House</span></h4>
+                                <p>Khulna, Bangladesh (Contract, Hybrid)</p>
+                                <p class="timeline-desc">Managed product sourcing, sales, digital marketing, and
+                                    customer service via Facebook for saree and gift combo sales.</p>
+                            </div>
+                        </div>
 
-                  <p class="blog-text">
-                    Get Business Names, Contacts, Emails, Websites & More – Efficiently and Accurately!
-                  </p>
-
+                    </div>
                 </div>
 
-              </a>
-            </li>
+            </div>
+        </div>
+    </section>
 
-            <li class="blog-post-item">
-              <a href="./blog1.html" target="_blank">
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-title">
+                <span>Skills</span>
+                <h2>Skills and Experience</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <div class="skill-header">
+                        <span class="skill-title">WhatsApp Marketing Software</span>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0;" data-width="95%"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-header">
+                        <span class="skill-title">WordPress</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0;" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-header">
+                        <span class="skill-title">Web Design</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0;" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-header">
+                        <span class="skill-title">Web Development</span>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0;" data-width="70%"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-header">
+                        <span class="skill-title">Business Marketing Consulting</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0;" data-width="85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog/All Features.png" alt="Design digest #80" loading="lazy">
-                </figure>
+    <!-- Portfolio Section -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <span>Portfolio</span>
+                <h2>Recent Works</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <a href="https://engrshuvodas.github.io/LMS-POINT/" target="_blank">
+                        <div class="portfolio-img">
+                            <img src="./assets/images/project img/1. LMS Point.png" alt="LMS POINT">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>LMS POINT</h3>
+                                <p>Web Design</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://engrshuvodas.github.io/Food-Pathao/" target="_blank">
+                        <div class="portfolio-img">
+                            <img src="./assets/images/project img/2. Food Pathao.png" alt="Food Pathao">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Food Pathao</h3>
+                                <p>Web Design</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://engrshuvodas.github.io/LMS_Dashboard/" target="_blank">
+                        <div class="portfolio-img">
+                            <img src="./assets/images/project-2.png" alt="LMS Dashboard">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>LMS Dashboard Design</h3>
+                                <p>Web Development</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="#" target="_blank">
+                        <div class="portfolio-img">
+                            <img src="./assets/images/project-4.png" alt="Brawlhalla">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Brawlhalla</h3>
+                                <p>Applications</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="blog-content">
+    <!-- Pricing Section (Converted to Service Packages/Offerings as no specific pricing data in source) -->
+    <section class="section" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <span>Offerings</span>
+                <h2>My Service Packages</h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="plan-name">Basic Website</h3>
+                    <div class="price">Starter</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> 5-Page Site</li>
+                        <li><i class="fas fa-check"></i> Basic SEO</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Contact for Price</a>
+                </div>
+                <div class="pricing-card popular">
+                    <h3 class="plan-name">Custom Software</h3>
+                    <div class="price">Pro</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> WhatsApp Marketing Tools</li>
+                        <li><i class="fas fa-check"></i> Lead Generation</li>
+                        <li><i class="fas fa-check"></i> Anti-Ban Technology</li>
+                        <li><i class="fas fa-check"></i> Full Support</li>
+                    </ul>
+                    <a href="#contact" class="btn">Contact for Price</a>
+                </div>
+                <div class="pricing-card">
+                    <h3 class="plan-name">E-Commerce</h3>
+                    <div class="price">Business</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Online Store Setup</li>
+                        <li><i class="fas fa-check"></i> Payment Integration</li>
+                        <li><i class="fas fa-check"></i> Product Management</li>
+                        <li><i class="fas fa-check"></i> Marketing Strategy</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Contact for Price</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Tools</p>
 
-                    <span class="dot"></span>
+    <!-- Testimonials / Reviews Section -->
+    <section class="reviews-section" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <span>Testimonials</span>
+                <h2>What Clients Say</h2>
+            </div>
 
-                    <time datetime="2022-02-23">Nov 17, 2023</time>
-                  </div>
+            <!-- Row 1: Right to Left -->
+            <div class="review-row marquee-row-1">
+                <div class="marquee-track">
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="dillinmoodley"
+                        data-role="Client" data-flag="za" data-country="South Africa" data-stars="5.0"
+                        data-image="./assets/images/client photos/client 1.jpg"
+                        data-text="Absolutely fantastic experience! Shuvo delivered a clean, modern, and responsive file exactly how I wanted. Communication was smooth, and revisions were handled quickly. Highly recommend for anyone looking for bluk whatsapps.">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 1.jpg" alt="dillinmoodley"
+                                class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>dillinmoodley</h4>
 
-                  <h3 class="h3 blog-item-title">Unlock Wasender’s WhatsApp Marketing Tools for Growth</h3>
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-za"></span>
+                                    <span class="country-name">South Africa</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">Absolutely fantastic experience! Shuvo delivered a clean, modern, and
+                            responsive file exactly how I wanted. Communication was smooth, and revisions were handled
+                            quickly. Highly recommend for anyone looking for bluk whatsapps.</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="mosco_2025" data-role="Client"
+                        data-flag="us" data-country="United States" data-stars="5.0"
+                        data-image="./assets/images/client photos/client 2.jpg"
+                        data-text="Engr, Shuvo, is a professional, He knows what he is doing, fast response time, available when i needed him, he is appreciated. i will come back for more business">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 2.jpg" alt="mosco_2025"
+                                class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>mosco_2025</h4>
 
-                  <p class="blog-text">
-                    Discover How Wasender’s Bulk Messaging and Lead Tools Can Supercharge Your Marketing.
-                  </p>
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-us"></span>
+                                    <span class="country-name">United States</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">Engr, Shuvo, is a professional, He knows what he is doing, fast response
+                            time, available when i needed him, he is appreciated. i will come back for more business</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="speedy_gulf" data-role="Client"
+                        data-flag="ae" data-country="United Arab Emirates" data-stars="5.0"
+                        data-image="./assets/images/client photos/client 3.jpg" data-text="Satisfied 100%">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 3.jpg" alt="speedy_gulf"
+                                class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>speedy_gulf</h4>
 
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-ae"></span>
+                                    <span class="country-name">United Arab Emirates</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">Satisfied 100%</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="vittorio466" data-role="Client"
+                        data-flag="it" data-country="Italy" data-stars="4.0"
+                        data-image="./assets/images/client photos/client 4.jpg" data-text="all goodddd">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 4.jpg" alt="vittorio466"
+                                class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>vittorio466</h4>
+
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-it"></span>
+                                    <span class="country-name">Italy</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                        <p class="review-text">all goodddd</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="skynetfrance" data-role="Client"
+                        data-flag="fr" data-country="France" data-stars="5.0"
+                        data-image="./assets/images/client photos/client 5.jpg" data-text="Perfect work good job!">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 5.jpg" alt="skynetfrance"
+                                class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>skynetfrance</h4>
+
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-fr"></span>
+                                    <span class="country-name">France</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">Perfect work good job!</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="saja77431" data-role="Client"
+                        data-flag="gb" data-country="United Kingdom" data-stars="5.0"
+                        data-image="./assets/images/client photos/client 6.jpg" data-text="Great work satisfied">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 6.jpg" alt="saja77431" class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>saja77431</h4>
+
+                                    <span class="repeat-separator">•</span>
+                                    <span class="repeat-badge"><i class="fas fa-sync-alt"></i> Repeat Client</span>
+
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-gb"></span>
+                                    <span class="country-name">United Kingdom</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">Great work satisfied</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="dessywagon" data-role="Client"
+                        data-flag="za" data-country="South Africa" data-stars="5.0"
+                        data-image="./assets/images/client photos/client 7.jpg" data-text="Great work">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 7.jpg" alt="dessywagon"
+                                class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>dessywagon</h4>
+
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-za"></span>
+                                    <span class="country-name">South Africa</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">Great work</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="saja77431" data-role="Client"
+                        data-flag="gb" data-country="United Kingdom" data-stars="4.7"
+                        data-image="./assets/images/client photos/client 6.jpg" data-text="Great guy excellent work">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 6.jpg" alt="saja77431" class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>saja77431</h4>
+
+                                    <span class="repeat-separator">•</span>
+                                    <span class="repeat-badge"><i class="fas fa-sync-alt"></i> Repeat Client</span>
+
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-gb"></span>
+                                    <span class="country-name">United Kingdom</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="review-text">Great guy excellent work</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="saja77431" data-role="Client"
+                        data-flag="gb" data-country="United Kingdom" data-stars="5.0"
+                        data-image="./assets/images/client photos/client 6.jpg"
+                        data-text="Excellent , professional and great support">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 6.jpg" alt="saja77431" class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>saja77431</h4>
+
+                                    <span class="repeat-separator">•</span>
+                                    <span class="repeat-badge"><i class="fas fa-sync-alt"></i> Repeat Client</span>
+
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-gb"></span>
+                                    <span class="country-name">United Kingdom</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">Excellent , professional and great support</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <!-- Duplicate for loop (Row 1) -->
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="saja77431" data-role="Client"
+                        data-flag="gb" data-country="United Kingdom" data-stars="5.0"
+                        data-image="./assets/images/client photos/client 6.jpg"
+                        data-text="Very good software , easy to operate and shuvo is great help and professional">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 6.jpg" alt="saja77431" class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>saja77431</h4>
+
+                                    <span class="repeat-separator">•</span>
+                                    <span class="repeat-badge"><i class="fas fa-sync-alt"></i> Repeat Client</span>
+
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-gb"></span>
+                                    <span class="country-name">United Kingdom</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">Very good software , easy to operate and shuvo is great help and
+                            professional</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Left to Right -->
+            <div class="review-row marquee-row-2">
+                <div class="marquee-track">
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="abunajeeh" data-role="Client"
+                        data-flag="lk" data-country="Sri Lanka" data-stars="5.0"
+                        data-image="./assets/images/client photos/client 1.jpg"
+                        data-text="⭐️⭐️⭐️⭐️⭐️ I had a great experience working with Shuvo WA. He provided the Unlimited WhatsApp Bulk Message Marketing Tool and also gave a clear tutorial on how to use it. Everything is working perfectly, and he was very helpful and patient in guiding me through the setup. Highly recommended for anyone looking for a reliable WhatsApp marketing service!">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 1.jpg" alt="abunajeeh" class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>abunajeeh</h4>
+
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-lk"></span>
+                                    <span class="country-name">Sri Lanka</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">⭐️⭐️⭐️⭐️⭐️ I had a great experience working with Shuvo WA. He provided
+                            the Unlimited WhatsApp Bulk Message Marketing Tool and also gave a clear tutorial on how to
+                            use it. Everything is working perfectly, and he was very helpful and patient in guiding me
+                            through the setup. Highly recommended for anyone looking for a reliable WhatsApp marketing
+                            service!</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="balkanlive" data-role="Client"
+                        data-flag="it" data-country="Italy" data-stars="5.0"
+                        data-image="./assets/images/client photos/client 2.jpg"
+                        data-text="⭐️⭐️⭐️⭐️⭐️ Outstanding Work — Truly Impressive! Working with this freelancer was an absolute pleasure. From the very first message, he demonstrated exceptional professionalism, clarity, and dedication to delivering top-quality results. He understood the task perfectly, asked smart questions, and executed everything with precision and creativity. The final product exceeded my expectations — every detail was thoughtfully handled, and the delivery was fast, smooth, and polished. Communication was clear and respectful throughout, and his commitment to excellence was evident See less">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 2.jpg" alt="balkanlive"
+                                class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>balkanlive</h4>
+
+                                    <span class="repeat-separator">•</span>
+                                    <span class="repeat-badge"><i class="fas fa-sync-alt"></i> Repeat Client</span>
+
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-it"></span>
+                                    <span class="country-name">Italy</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">⭐️⭐️⭐️⭐️⭐️ Outstanding Work — Truly Impressive! Working with this
+                            freelancer was an absolute pleasure. From the very first message, he demonstrated
+                            exceptional professionalism, clarity, and dedication to delivering top-quality results. He
+                            understood the task perfectly, asked smart questions, and executed everything with precision
+                            and creativity. The final product exceeded my expectations — every detail was thoughtfully
+                            handled, and the delivery was fast, smooth, and polished. Communication was clear and
+                            respectful throughout, and his commitment to excellence was evident See less</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="omar_shopify" data-role="Client"
+                        data-flag="bd" data-country="Bangladesh" data-stars="5.0"
+                        data-image="./assets/images/client photos/client 3.jpg"
+                        data-text="I had an amazing experience working with this seller! From start to finish, they were professional, responsive, and incredibly skilled at what they do. Every detail was handled with care and precision, and they went above and beyond to make sure everything was perfect. The quality of the work exceeded my expectations, and the communication throughout the process was excellent. It's rare to find someone this reliable and dedicated to customer satisfaction. I can confidently say this is one of the best sellers I've ever worked with! Thank you again for your hard work – I’ll definitely be back for more! See less">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 3.jpg" alt="omar_shopify"
+                                class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>omar_shopify</h4>
+
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-bd"></span>
+                                    <span class="country-name">Bangladesh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">I had an amazing experience working with this seller! From start to
+                            finish, they were professional, responsive, and incredibly skilled at what they do. Every
+                            detail was handled with care and precision, and they went above and beyond to make sure
+                            everything was perfect. The quality of the work exceeded my expectations, and the
+                            communication throughout the process was excellent. It's rare to find someone this reliable
+                            and dedicated to customer satisfaction. I can confidently say this is one of the best
+                            sellers I've ever worked with! Thank you again for your hard work – I’ll definitely be back
+                            for more! See less</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="shlomogilboa" data-role="Client"
+                        data-flag="il" data-country="Israel" data-stars="5.0"
+                        data-image="./assets/images/client photos/client 4.jpg"
+                        data-text="I rarely write reviews this enthusiastic, but Shuvo truly deserves it. From the very beginning he was polite, patient, and always available — no matter the hour. Even after receiving payment, he continued to give me full support, step by step, with kindness and real professionalism. The software he provided is impressive and powerful. We ran a large test and it worked exactly as promised — accurate, fast, and reliable. He knows his field inside out, and I felt at every moment that I was in good hands. What touched me most is his attitude: he genuinely cares about the success of his clients. He worked with me as if he was part of my team, not just a freelancer. That’s very rare today. I highly recommend him without hesitation, and I truly hope to continue working with him long term. Thank you, Shuvo, for your honesty, speed, and dedication! --- See less">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 4.jpg" alt="shlomogilboa"
+                                class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>shlomogilboa</h4>
+
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-il"></span>
+                                    <span class="country-name">Israel</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">I rarely write reviews this enthusiastic, but Shuvo truly deserves it.
+                            From the very beginning he was polite, patient, and always available — no matter the hour.
+                            Even after receiving payment, he continued to give me full support, step by step, with
+                            kindness and real professionalism. The software he provided is impressive and powerful. We
+                            ran a large test and it worked exactly as promised — accurate, fast, and reliable. He knows
+                            his field inside out, and I felt at every moment that I was in good hands. What touched me
+                            most is his attitude: he genuinely cares about the success of his clients. He worked with me
+                            as if he was part of my team, not just a freelancer. That’s very rare today. I highly
+                            recommend him without hesitation, and I truly hope to continue working with him long term.
+                            Thank you, Shuvo, for your honesty, speed, and dedication! --- See less</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="penta_mrkt2" data-role="Client"
+                        data-flag="lk" data-country="Sri Lanka" data-stars="5.0"
+                        data-image="./assets/images/client photos/client 5.jpg"
+                        data-text="Absolutely amazing experience! The WhatsApp marketing software works like magic — super easy to use even for a non-tech guy like me. Shuvo was incredibly professional, quick to respond, and guided me patiently step-by-step without hesitation. His support and strategic thinking truly exceeded my expectations. If you’re serious about WhatsApp marketing, this is the tool you need, and Shuvo is the guy to trust! See less">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 5.jpg" alt="penta_mrkt2"
+                                class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>penta_mrkt2</h4>
+
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-lk"></span>
+                                    <span class="country-name">Sri Lanka</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">Absolutely amazing experience! The WhatsApp marketing software works like
+                            magic — super easy to use even for a non-tech guy like me. Shuvo was incredibly
+                            professional, quick to respond, and guided me patiently step-by-step without hesitation. His
+                            support and strategic thinking truly exceeded my expectations. If you’re serious about
+                            WhatsApp marketing, this is the tool you need, and Shuvo is the guy to trust! See less</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="modeloftheyear"
+                        data-role="Client" data-flag="it" data-country="Italy" data-stars="5.0"
+                        data-image="./assets/images/client photos/client 6.jpg"
+                        data-text="This is my 3rd time working with Shuvo. Took the software for another PC this time. Whenever I face any confusion, I get instant support, which is really helpful for me. The software works perfectly. Shuvo is professional, friendly, and supportive. Highly recommended, and I’ll definitely return again!">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 6.jpg" alt="modeloftheyear"
+                                class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>modeloftheyear</h4>
+
+                                    <!-- <span class="repeat-separator">•</span>
+                                    <span class="repeat-badge"><i class="fas fa-sync-alt"></i> Repeat Client</span> -->
+
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-it"></span>
+                                    <span class="country-name">Italy</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">This is my 3rd time working with Shuvo. Took the software for another PC
+                            this time. Whenever I face any confusion, I get instant support, which is really helpful for
+                            me. The software works perfectly. Shuvo is professional, friendly, and supportive. Highly
+                            recommended, and I’ll definitely return again!</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <!-- Duplicate for loop (Row 2) -->
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="modeloftheyear"
+                        data-role="Client" data-flag="it" data-country="Italy" data-stars="5.0"
+                        data-image="./assets/images/client photos/client 6.jpg"
+                        data-text="Shuvo's support is excellent—always ready to help! If you want a cost-effective way to promote your business, I highly recommend this software.">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 6.jpg" alt="modeloftheyear"
+                                class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>modeloftheyear</h4>
+
+                                    <span class="repeat-separator">•</span>
+                                    <span class="repeat-badge"><i class="fas fa-sync-alt"></i> Repeat Client</span>
+
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-it"></span>
+                                    <span class="country-name">Italy</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">Shuvo's support is excellent—always ready to help! If you want a
+                            cost-effective way to promote your business, I highly recommend this software.</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                    <div class="review-card" onclick="openReviewModal(this)" data-name="modeloftheyear"
+                        data-role="Client" data-flag="it" data-country="Italy" data-stars="5.0"
+                        data-image="./assets/images/client photos/client 6.jpg"
+                        data-text="really a great software ann also Das drove me to al the process ..could not ask anything better">
+                        <div class="client-header">
+                            <img src="./assets/images/client photos/client 6.jpg" alt="modeloftheyear"
+                                class="review-avatar">
+                            <div class="client-info">
+                                <div class="name-row">
+                                    <h4>modeloftheyear</h4>
+
+                                    <span class="repeat-separator">•</span>
+                                    <span class="repeat-badge"><i class="fas fa-sync-alt"></i> Repeat Client</span>
+
+                                </div>
+                                <div class="country-row">
+                                    <span class="flag fi fi-it"></span>
+                                    <span class="country-name">Italy</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">really a great software ann also Das drove me to al the process ..could
+                            not ask anything better</p>
+                        <span class="read-more-link">Read more</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Review Modal -->
+    <div class="review-modal" id="reviewModal" onclick="closeReviewModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="modal-close" onclick="closeReviewModal(event)">&times;</span>
+            <div class="modal-body">
+                <div class="modal-header-info">
+                    <img src="" alt="" id="modalImg" class="modal-avatar">
+                    <div class="modal-client-details">
+                        <h3 id="modalName"></h3>
+                        <span class="modal-role" id="modalRole"></span>
+                    </div>
+                </div>
+                <div class="modal-stars" id="modalStars"></div>
+                <div class="modal-flag" id="modalFlag"></div>
+                <p class="modal-text" id="modalText"></p>
+                <a href="https://www.fiverr.com/shuvo_das74886" target="_blank" class="fiverr-btn">View on Fiverr</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <section class="section" id="blog">
+        <div class="container">
+            <div class="section-title">
+                <span>Latest News</span>
+                <h2>My Recent Articles</h2>
+            </div>
+            <div class="blog-grid">
+
+                <div class="blog-card">
+                    <a href="blog-whatsapp-marketing.html">
+                        <div class="blog-banner-box">
+                            <img src="./assets/images/blog/wasender details.jpg" alt="Boost Sales with Bulk Msg">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Marketing</span>
+                                <span class="dot"></span>
+                                <time>Feb 23, 2022</time>
+                            </div>
+                            <h3 class="blog-item-title">Boost Sales with Bulk Msg WhatsApp Marketing</h3>
+                            <p class="blog-text">Reach More Customers Instantly with Personalized Messaging. Learn the
+                                strategies that drive engagement.</p>
+                            <span class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
                 </div>
 
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="./blog1.html" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog/Whatsapp numbers to generate leads.png" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Marketing</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">How to Collect Leads and Filter WhatsApp Accounts for Any Audience</h3>
-
-                  <p class="blog-text">
-                    Effective WhatsApp Lead Collection and Filtering Strategies for Target Audiences and Global Markets
-                  </p>
-
+                <div class="blog-card">
+                    <a href="blog-google-maps.html">
+                        <div class="blog-banner-box">
+                            <img src="./assets/images/blog/black google map.jpg" alt="Google Maps Data Scraping">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Marketing</span>
+                                <span class="dot"></span>
+                                <time>Mar 28, 2022</time>
+                            </div>
+                            <h3 class="blog-item-title">Unlock 1000+ Verified Leads with Google Maps</h3>
+                            <p class="blog-text">Get Business Names, Contacts, Emails, Websites & More – Efficiently and
+                                Accurately!</p>
+                            <span class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
                 </div>
 
-              </a>
-            </li>
-
-
-
-            <!-- <li class="blog-post-item">
-              <a href="./blog1.html" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
+                <div class="blog-card">
+                    <a href="blog-wasender-tools.html">
+                        <div class="blog-banner-box">
+                            <img src="./assets/images/blog/All Features.png" alt="Wasender Tools">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Tools</span>
+                                <span class="dot"></span>
+                                <time>Nov 17, 2023</time>
+                            </div>
+                            <h3 class="blog-item-title">Unlock Wasender’s WhatsApp Marketing Tools</h3>
+                            <p class="blog-text">Discover How Wasender’s Bulk Messaging and Lead Tools Can Supercharge
+                                Your Marketing.</p>
+                            <span class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
                 </div>
 
-              </a>
-            </li> -->
+                <div class="blog-card">
+                    <a href="blog-lead-collection.html">
+                        <div class="blog-banner-box">
+                            <img src="./assets/images/blog/Whatsapp numbers to generate leads.png"
+                                alt="Lead Collection">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Marketing</span>
+                                <span class="dot"></span>
+                                <time>Feb 23, 2022</time>
+                            </div>
+                            <h3 class="blog-item-title">How to Collect Leads and Filter WhatsApp Accounts</h3>
+                            <p class="blog-text">Effective WhatsApp Lead Collection and Filtering Strategies for Target
+                                Audiences.</p>
+                            <span class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
 
-          </ul>
+            </div>
+        </div>
+    </section>
 
-        </section>
+    <!-- Clients Logo Section -->
+    <section class="clients-section">
+        <div class="container clients-grid">
+            <img src="./assets/images/logo-6-color.png" alt="Client 1">
+            <img src="./assets/images/logo-2-color.png" alt="Client 2">
+            <img src="./assets/images/logo-3-color.png" alt="Client 3">
+            <img src="./assets/images/logo-4-color.png" alt="Client 4">
+            <img src="./assets/images/logo-5-color.png" alt="Client 5">
+            <img src="./assets/images/logo-6-color.png" alt="Client 6">
+        </div>
+    </section>
 
-      </article>
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <span>Contact</span>
+                <h2>Get In Touch With Me</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone / WhatsApp</h4>
+                            <p>+880 1765-245872</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>engrshuvoda@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Gujarat, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form action="https://formspree.io/f/xanjzklp" method="POST" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="fullname" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/engr.shuvo74886/" class="social-icon" target="_blank"
+                    title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/+8801765245872" class="social-icon" target="_blank" title="WhatsApp"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="https://www.fiverr.com/shuvo_das74886" class="social-icon" target="_blank" title="Fiverr">
+                    <img src="./assets/images/fiverr logo.png" alt="Fiverr"
+                        style="width: 24px; height: 24px; object-fit: contain;">
+                </a>
+                <a href="mailto:engrshuvoda@gmail.com" class="social-icon" title="Email"><i
+                        class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/engrshuvoda" class="social-icon" target="_blank"
+                    title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/channel/UCEJ0R871tF2PLT27q9azYWg" class="social-icon" target="_blank"
+                    title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/engrshuvodas" class="social-icon" target="_blank" title="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://x.com/engrshuvodas" class="social-icon" target="_blank" title="X (Twitter)">
+                    <img src="./assets/images/x.png" alt="X" style="width: 20px; height: 20px; object-fit: contain;">
+                </a>
+            </div>
+            <p class="copyright">&copy; 2026 Engr. Shuvo Das. All Rights Reserved.</p>
+        </div>
+    </footer>
 
+    <!-- Floating Contact Widget -->
+    <a href="https://wa.me/8801765245872" class="floating-contact-widget" target="_blank">
+        <div class="widget-avatar">
+            <img src="./assets/images/Engr Shuvo Das.png" alt="Shuvo">
+        </div>
+        <div class="widget-info">
+            <div class="widget-name">Message - Shuvo</div>
+            <div class="widget-status">
+                <span class="status-dot"></span>
+                <span class="status-text">Online</span>
+                <span class="status-sep">·</span>
+                <span class="response-time">Avg. response time: 1 Hour</span>
+            </div>
+        </div>
+    </a>
 
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418273.224911567!2d68.6848901800457!3d22.399496801005473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959051f5f0ef795%3A0x861bd887ed54522e!2sGujarat!5e1!3m2!1sen!2sin!4v1744618470901!5m2!1sen!2sin" 
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
-        </section>
-        
-
-
-
-
-
-<form action="https://formspree.io/f/xanjzklp" method="POST">
-  <div class="input-wrapper">
-    <input type="text" name="fullname" class="form-input" placeholder="Full name" >
-    <input type="email" name="email" class="form-input" placeholder="Email address" >
-  </div>
-
-  <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
-
-  <button class="form-btn" type="submit">
-    <ion-icon name="paper-plane"></ion-icon>
-    <span>Send Message</span>
-  </button>
-</form>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

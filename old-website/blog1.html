@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grow Your Business with WhatsApp</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <style>
+    :root {
+      --fs-1: 2.25rem;
+      --fs-2: 1.5rem;
+      --fs-5: 1rem;
+      --fs-7: 0.875rem;
+      --fw-500: 500;
+      --smoky-black: #0f0f0f;
+      --eerie-black-2: #1a1a1a;
+      --white-2: #f5f5f5;
+      --light-gray: #cccccc;
+      --light-gray-70: #aaaaaa;
+      --jet: #2e2e2e;
+      --orange-yellow-crayola: #fcbf49;
+      --text-gradient-yellow: linear-gradient(90deg, #fcbf49, #ffd166);
+      --border-gradient-onyx: linear-gradient(to right, #2e2e2e, #444);
+      --shadow-2: 0 10px 25px rgba(0, 0, 0, 0.2);
+      --ff-poppins: "Poppins", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--smoky-black);
+      color: var(--white-2);
+      font-family: var(--ff-poppins);
+      line-height: 1.6;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      padding: 20px ;
+    }
+
+    .blog-container {
+      width: 100%;
+      background: var(--eerie-black-2);
+      border: 1px solid var(--jet);
+      border-radius: 20px;
+      padding: 30px 25px;
+      box-shadow: var(--shadow-2);
+    }
+
+    .blog-title {
+      font-size: var(--fs-1);
+      background: var(--text-gradient-yellow);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .blog-meta {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: var(--fs-7);
+      color: var(--light-gray-70);
+      margin-bottom: 30px;
+      text-align: justify;
+      gap: 10px;
+    }
+
+    .share-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+    }
+
+    .share-buttons a {
+      color: var(--light-gray-70);
+      text-decoration: none;
+      font-size: var(--fs-5);
+      transition: color 0.3s;
+    }
+
+    .share-buttons a:hover {
+      color: var(--orange-yellow-crayola);
+    }
+
+    .blog-content p {
+      font-size: var(--fs-5);
+      margin-bottom: 15px;
+    }
+
+    .blog-content h2 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: var(--orange-yellow-crayola);
+      font-size: var(--fs-2);
+    }
+
+    .blog-content blockquote {
+      border-left: 4px solid var(--orange-yellow-crayola);
+      padding-left: 16px;
+      margin: 20px 0;
+      font-style: italic;
+      color: var(--light-gray);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      font-size: var(--fs-5);
+      color: var(--white-2);
+    }
+
+    .image-section {
+      margin: 30px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-section img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 90px;
+      border: 1px solid var(--jet);
+      box-shadow: var(--shadow-2);
+    }
+
+    .cta {
+      margin-top: 40px;
+      padding: 20px;
+      background: var(--border-gradient-onyx);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 10px;
+      background: var(--orange-yellow-crayola);
+      color: var(--smoky-black);
+      font-weight: var(--fw-500);
+      text-decoration: none;
+      font-size: var(--fs-5);
+      padding: 12px 30px;
+      border-radius: 25px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .cta a:hover {
+      background: #ffb549;
+      transform: scale(1.05);
+    }
+
+    /* ✅ Floating Fiverr Chat Button */
+    .wa-chat-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      background: var(--eerie-black-2);
+      color: var(--white-2);
+      text-decoration: none;
+      border-radius: 50px;
+      padding: 10px 15px;
+      border: 1px solid var(--jet);
+      box-shadow: var(--shadow-2);
+      z-index: 999;
+      transition: transform 0.3s ease, background 0.3s ease;
+      max-width: 250px;
+      width: auto;
+      border: 2px solid var(--light-gray-70);  /* Updated border color */
+    }
+
+    .wa-chat-button:hover {
+      transform: scale(1.05);
+      background: var(--jet);
+    }
+
+    .wa-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 12px;
+      border: 2px solid var(--orange-yellow-crayola);
+    }
+
+    .wa-chat-info {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .wa-chat-name {
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--white-2);
+    }
+
+    .wa-chat-meta {
+      font-size: 12px;
+      color: var(--light-gray);
+    }
+
+    .wa-status {
+      color: #26d367;
+      font-weight: bold;
+    }
+
+    /* ✅ Share Dialog Box */
+    .share-dialog {
+      display: none;
+      position: fixed;
+      bottom: 70px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #26d367;
+      padding: 5px;
+      border-radius: 10px;
+      color: var(--smoky-black);
+      box-shadow: var(--shadow-2);
+      z-index: 1000;
+      font-size: var(--fs-5);
+      width: 250px;
+      text-align: center;
+    }
+
+    .share-dialog p {
+      margin-bottom: 10px;
+    }
+
+    /* ✅ Responsive tweaks for mobile */
+    @media (max-width: 768px) {
+      main {
+        padding: 30px 5%;
+      }
+
+      .blog-title {
+        font-size: 1.75rem;
+      }
+
+      .blog-content h2 {
+        font-size: 1.25rem;
+      }
+
+      .cta {
+        font-size: 0.95rem;
+      }
+
+      .blog-meta {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+      }
+
+      .wa-chat-button {
+        bottom: 15px;
+        left: 15px;
+        padding: 8px 12px;
+      }
+
+      .wa-avatar {
+        width: 36px;
+        height: 36px;
+      }
+
+      .wa-chat-name {
+        font-size: 14px;
+      }
+
+      .wa-chat-meta {
+        font-size: 11px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .wa-chat-button {
+        bottom: 10px;
+        left: 10px;
+        padding: 6px 10px;
+      }
+
+      .wa-avatar {
+        width: 32px;
+        height: 32px;
+      }
+
+      .wa-chat-name {
+        font-size: 12px;
+      }
+
+      .wa-chat-meta {
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="blog-container">
+      <h1 class="blog-title">Grow Your Business with WhatsApp </h1>
+
+      <div class="blog-meta">
+        <a href="https://github.com/engrshuvodas" target="_blank" style="flex: 1; text-align: center;">👨‍💻 Shuvo</a>
+        <span>📅 April 13, 2025</span>
+        <span style="flex: 1; text-align: center;">📂 Marketing</span>
+      </div>
+
+      <div class="image-section">
+        <img src="./assets/images/blog/wa ads.png" alt="WhatsApp Marketing" />
+      </div>
+
+      <div class="share-buttons">
+        <a href="#" id="share-link" onclick="copyLink()">🔗 Share</a>
+      </div>
+
+      <div class="blog-content">
+        <p>In today’s fast-paced digital world, WhatsApp isn’t just a messaging app—it’s a powerful marketing tool to connect with your audience instantly and personally. Whether you're a small business or an entrepreneur, WhatsApp can be the gateway to real-time engagement and business growth.</p>
+
+        <h2>Why Use WhatsApp for Marketing?</h2>
+        <p>Over 2 billion people use WhatsApp. That’s a massive opportunity to reach your customers where they already spend their time. From sharing updates to offering support and running promotions, WhatsApp helps build relationships with your customers like no other platform.</p>
+
+        <blockquote>“Marketing is no longer about the stuff you make, but the stories you tell.” – Seth Godin</blockquote>
+
+        <h2>Top Benefits:</h2>
+        <ul>
+          <li>✅ Direct and instant communication</li>
+          <li>✅ Higher open rates than email</li>
+          <li>✅ Personalized messaging builds trust</li>
+          <li>✅ Multimedia support for images, videos, and PDFs</li>
+          <li>✅ Automated responses with bulk software</li>
+        </ul>
+
+        <h2>How WASender Can Help</h2>
+        <p>Our software, <strong>WASender v4.0.11</strong>, allows you to send bulk WhatsApp messages effortlessly. Automate campaigns, send personalized messages, and analyze performance—all from one platform.</p>
+
+      <div class="cta">
+        <p>Ready to transform your business with WhatsApp?</p>
+         <a href="https://www.fiverr.com/s/e6qERxP" target="_blank" rel="noopener noreferrer">Explore WASender v4.0.11 Now 🚀</a>
+      </div>
+
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ✅ Floating Fiverr Button -->
+  <a href="https://wa.me/8801765245872?text=Hi%2C%20I%20found%20your%20WhatsApp%20marketing%20blog%20and%20I'm%20interested%20in%20trying%20out%20your%20software.%20Could%20you%20please%20provide%20a%20free%20trial%3F" class="wa-chat-button" target="_blank">
+    <img src="./assets/images/Engr Shuvo Das.png" alt="Shuvo" class="wa-avatar" />
+    <div class="wa-chat-info">
+      <div class="wa-chat-name">Message - Shuvo</div>
+      <div class="wa-chat-meta"><span class="wa-status">● Online</span> · Avg. response time: 1 Hour</div>
+    </div>
+  </a>
+
+  <!-- ✅ Share Dialog Box -->
+  <div id="share-dialog" class="share-dialog">
+    <p>Sharing this page now... 🗣️</p>
+  </div>
+
+  <script>
+    function copyLink() {
+      const link = window.location.href; // Get the current page URL
+      const textArea = document.createElement('textarea');
+      textArea.value = link;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+
+      alert('Link copied to clipboard! You can now share it.');
+
+      // Show the share dialog box for 3 seconds
+      const dialog = document.getElementById('share-dialog');
+      dialog.style.display = 'block';
+      
+      setTimeout(() => {
+        dialog.style.display = 'none';
+      }, 3000); // Hide after 3 seconds
+    }
+  </script>
+</body>
+</html>
